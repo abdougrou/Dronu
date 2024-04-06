@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+embedded/crazyflie-firmware/vendor/CMSIS/CMSIS/*.lib filter=lfs diff=lfs merge=lfs -text
+embedded/build/src/built-in.o filter=lfs diff=lfs merge=lfs -text
+*.o filter=lfs diff=lfs merge=lfs -text
